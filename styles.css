@@ -1,0 +1,148 @@
+html {
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+}
+
+a {
+    color: seashell;
+}
+
+h2, h3, h4, h5  {
+    margin: 0;
+    padding: 10px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+  
+header {
+    height: 69px;
+    width: 100%;
+    border-bottom: 1px solid seashell;
+    position: fixed;
+    z-index: 1;
+    background-color: black;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 20px;
+    height: 50px;
+}
+
+nav {
+    text-align: right;
+    flex-grow: 1;
+}
+
+nav li {
+    display: inline-flex;
+    margin-right: 20px;
+}
+
+main {
+    padding-top: 69px;
+}
+
+.pagehero {
+    margin: auto;
+    background: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg');
+    height: 700px;
+    max-width: 1200px;
+}
+
+.mission {
+    background-color: black;
+    margin: auto;
+    width: 100%;
+}
+
+.futured {
+    width: 1000px;
+    padding-top: 50px;
+    margin: auto;
+}
+
+.item img {
+    height: 200px;
+    width: 300px;
+    margin: 10px;
+}
+
+.locations {
+    margin: 50px auto;
+    background: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg');
+    height: 500px;
+    background-position: center;
+    max-width: 1200px;
+    padding-top: 70px;
+}
+
+.adress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 1;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    margin: 15px 40px 0 0;
+    flex-basis: 280px;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+}
+
+.info {
+    width: 100%;
+    height: 200px;
+    padding-top: 50px;
+}
+
+.copyright {
+    margin-left: 20px;
+    text-align: left;
+}
+
+@media only screen and (max-width: 1000px) {
+    .pagehero {
+        width: 100%;
+    }
+
+    .locations {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .pagehero {
+        width: 100%;
+    }
+
+    .locations {
+        width: 100%;
+    }
+    .item img {
+        width: 100%;
+    }
+}
