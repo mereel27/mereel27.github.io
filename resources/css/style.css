@@ -245,6 +245,10 @@ header .desktop ul li .button {
     height: 20rem;
   }
 
+  #sign-up-cta .content {
+    width: 100%;
+  }
+
   #sign-up-cta h1 {
     font-size: 2.25rem;
   }
@@ -275,7 +279,6 @@ header .desktop ul li .button {
   height: 65%;
   margin: auto;
 }
-
 
 .feature h2 {
   padding-bottom: .5rem;
@@ -367,7 +370,6 @@ header .desktop ul li .button {
   #filters-section {
     padding: 1.5rem 0 0 0;
   }
-
 
   #filters-section .content h2 {
     padding-bottom: .625rem;
