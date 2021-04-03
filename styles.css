@@ -59,6 +59,7 @@ nav li {
 
 main {
     padding-top: 69px;
+    overflow: hidden;
 }
 
 .pagehero {
@@ -75,10 +76,17 @@ main {
 }
 
 .futured {
-    width: 1000px;
+    width: 65%;
     padding-top: 50px;
     margin: auto;
 }
+
+.items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 
 .item img {
     height: 200px;
