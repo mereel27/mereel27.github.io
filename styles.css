@@ -123,26 +123,3 @@ footer {
     margin-left: 20px;
     text-align: left;
 }
-
-@media only screen and (max-width: 1000px) {
-    .pagehero {
-        width: 100%;
-    }
-
-    .locations {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .pagehero {
-        width: 100%;
-    }
-
-    .locations {
-        width: 100%;
-    }
-    .item img {
-        width: 100%;
-    }
-}
