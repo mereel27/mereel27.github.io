@@ -1,122 +1,59 @@
 <!DOCTYPE html>
+
 <html>
-<head>
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Damion&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./resources/css/reset.css">
-  <link rel="stylesheet" href="./resources/css/style.css">
-  <meta charset="UTF-8">
-</head>
-<body>
-  <!-- Header -->
-  <header>
-    <div class="content">
-      <a href="index.html" class="desktop logo">Fotomat</a>
-      <nav class="desktop">
-        <ul>
-          <li><a href="#">Product detail</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="https://www.instagram.com/">Follow us <img class="icon" src="./resources/images/instagram.png"></a></li>
-          <li><a href="#" class="button">Join us</a></li>
-        </ul>
-      </nav>
-      <nav class="mobile">
-        <ul>
-          <li><a href="#"><img src="./resources/images/ic-logo.svg"></a></li>
-          <li><a href="#"><img src="./resources/images/ic-product-detail.svg"></a></li>
-          <li><a href="#"><img src="./resources/images/ic-about-us.svg"></a></li>
-          <li><a href="#" class="button">Join us</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <head>
+    <title>Space Discovery</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Coda&family=Orbitron&display=swap" rel="stylesheet">
+    <link href="./styles.css" type="text/css" rel="stylesheet">
+  </head>
 
-  <!-- Main Content -->
-  <div class="main-content">
-
-    <!-- Sign Up Section -->
-    <div id="sign-up-section" class="banner">
-      <div id="sign-up-cta">
-        <div class="content center">
-          <div class="header">
-            <h2 class="cursive">Instant</h2>
-            <h1 class="striking">FORMAT CAMERA</h1>
-          </div>
-          <div class="email">
-            <span>
-              Email us to request a demo and be in our waiting list for the <strong>Febuary 2017</strong> release!
-            </span>
-            <div class="button">Join the waiting list</div>
-          </div>
+  <body>
+    <header>
+      <div class="container">
+        <div id="logo">
+          <a href="index.html"><img src="images/large_white.png"></a>
         </div>
+        <nav>
+          <ul>
+            <li><a href="#mars">Mars</a></li>
+            <li><a href="#">Jupiter</a></li>
+            <li><a href="#">Titan</a></li>
+            <li><a href="#gliese">Gliese</a></li>
+          </ul>
+        </nav>
       </div>
-    </div>
-
-    <!-- Features Section -->
-    <div id="features-section">
-      <div class="feature">
-        <div class="center">
-          <div class="image-container">
-            <img src="./resources/images/feature-1.png" />
+      <span><a href="staff.html">Our staff</a></span>
+    </header>
+    <main>
+        <section id="concepts" class="flexbox">
+          <div class="description">
+            <h1>THE ROAD TO MAKING HUMANITY MULTIPLANETARY</h1>
+            <p>“You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. 
+              It’s about believing in the future and thinking that the future will be better than the past. 
+              And I can’t think of anything more exciting than going out there and being among the stars.”</p>
           </div>
-          <div class="content">
-            <h2>Advanced, automatic, instant</h2>
-            <h3>Shutter speed, apperture and flash output adjust automatically</h3>
+        </section>
+        <section id="mars" class="flexbox">
+          <div class="description">
+            <h1>MARS & BEYOND</h1>
+            <p>The mission architecture includes fully reusable launch vehicles, human-rated spacecraft and on-orbit propellant tankers.</p>
           </div>
-        </div>
-      </div>
-      <div class="feature">
-        <div class="center">
-          <div class="image-container">
-            <img src="./resources/images/feature-2.png" />
+        </section>
+        <section id="gliese" class="flexbox">
+          <div class="description">
+            <h1>THE NEW BEGINING</h1>
+            <p>Happy under a lucky star will be born.</p>
           </div>
-          <div class="content">
-            <h2>Beautifully crafted inside-out</h2>
-            <h3>From the paint outside to the tiny screw inside, Fotomatic is crafted with love and 20-year of expertise</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Filters Section -->
-    <div id="filters-section">
-      <div class="content center">
-        <h2>Over 20+ filters to choose from</h2>
-        <h3>Feed your creativity with 20 different filter designed by our eclectic in-house photographers!</h3>
-      </div>
-      <div class="images-container">
-        <div class="image-container">
-          <img src="./resources/images/filter-1.png" />
-        </div>
-        <div class="image-container">
-          <img src="./resources/images/filter-2.png" />
-        </div>
-        <div class="image-container">
-          <img src="./resources/images/filter-3.png" />
-        </div>
-        <div class="image-container extra">
-          <img src="./resources/images/filter-4.png" />
-        </div>
-      </div>
-    </div>
-
-    <!-- Quotes Section -->
-    <div id="quotes-section">
-      <div class="content center">
-        <span class="quote">“It’s truly something that could create a brand new photography Renaissance”</span>
-        <img class="quote-citation" src="./resources/images/photography-logo.png" />
-      </div>
-    </div>
-
-    <!-- Footer -->
+        </section>
+    </main>
     <footer>
-      <div class="content">
-        <span class="copyright">© 2016  Fotomatic, All Rights Reserved</span>
-        <span class="location">Designed in NYC</span>
+      <div class="flexbox">
+      <p>Space Discovery© 2021</p>
+      <p>spacediscovery@mail.com</p>
+      <p>777-777-888</p>
       </div>
     </footer>
-
-  </div>
-</body>
+  </body>
 </html>

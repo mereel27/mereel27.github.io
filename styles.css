@@ -1,0 +1,215 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+    background-color: black;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+
+header a {
+    text-decoration: none;
+    color: white;
+    
+  }
+
+.flexbox {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+  }
+
+header {
+    background-color: rgba(0, 0, 0, 0.336);
+    height: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+.container {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap
+}
+
+header span {
+    grid-area: 1 / 2 / 1 / 3;
+    width: 100px;
+    align-self: center;
+    justify-self: end;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-items: flex-end;
+}
+
+header li {
+    display: inline;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 0.15rem;
+}
+
+header li:hover {
+    font-weight: 700;
+}
+
+
+#logo img {
+    width: 90px;
+    height: auto;
+}
+
+#concepts {
+    background: url('images/HP_SN11_Vertical_20210311_IMG_01221.webp');
+    background-size: cover;
+    width: 100%;
+    height: 1000px;
+}
+
+#mars {
+    background: url('images/wallhaven-4d69o3_1920x1080.png');
+    background-size: cover;
+    width: 100%;
+    height: 1000px;
+}
+
+#gliese {
+    background: url('images/wallhaven-4yeegx.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 1000px;
+}
+
+
+.description {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+    margin: 0 15% 0 50%;
+    background-color: rgba(0, 0, 0, 0.336);
+    border-radius: 3%;
+}
+
+h1,
+h3,
+h5 {
+    text-align: center;
+    color:whitesmoke;
+    letter-spacing: 0.1em;
+}
+
+p {
+    font-family: 'Coda', cursive;
+    color: whitesmoke;
+    text-align: center;
+    word-spacing: 0.3em;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+h3 {
+    line-height: 1.5em;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+}
+
+footer .flexbox {
+    justify-content: center;
+    padding: 1%;
+    font-size: 0.85rem;
+}
+
+footer p {
+    margin-right: 1em;
+}
+
+.staff {
+    margin-top: 100px;
+    background: url('images/station.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.box {
+    background-color: rgba(0, 0, 0, 0.336);
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3%;
+}
+
+.flexcont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.box img {
+    max-width: 100%;
+    height: 230px;
+    margin: 5% 0;
+}
+
+@media only screen and (max-width: 450px) {
+    .flexcont {
+        flex-direction: column;
+        flex-basis: content;
+    }
+
+    .box {
+        margin-bottom: 10px;
+        align-items: center;
+    }
+
+    .box img {
+        width: 100%;
+        height: auto;
+        margin: 5% 0;
+    }
+
+    .staff {
+        height: auto;
+    }
+
+    header {
+        display: flex;
+    }
+
+    header li {
+        font-size: 15px;
+        margin: 0;
+    }
+    
+    header nav ul {
+        flex-wrap: wrap;
+    }
+}
